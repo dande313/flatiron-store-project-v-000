@@ -14,7 +14,8 @@
 ActiveRecord::Schema.define(version: 20171010204558) do
 
   create_table "carts", force: :cascade do |t|
-    t.string  "status"
+    t.float   "total"
+    t.string  "status",  default: "not submitted"
     t.integer "user_id"
   end
 
